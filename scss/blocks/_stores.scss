@@ -1,0 +1,8 @@
+.stores {
+  display: grid;
+  grid-row-gap: 10px;
+  width: 100%;
+  &__item {
+    height: 42px;
+  }
+}

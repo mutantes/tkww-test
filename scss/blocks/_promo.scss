@@ -1,0 +1,54 @@
+.promo {
+  background: var(--promo-bg);
+  padding: 34px 14px 0;
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin-bottom: 26px;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.02rem;
+    margin-bottom: 60px;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+    width: 234px;
+    margin: 0 auto 56px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--input-border-color);
+
+    &::after {
+      content: '';
+      height: 42px;
+      width: 42px;
+      display: block;
+      background: url(../../assets/lupa.svg) var(--brand-color) no-repeat;
+      background-size: 18px;
+      background-position: center center;
+    }
+  }
+  
+  &__search-input {
+    width: 192px;
+    height: 42px;
+    border: 0;
+    border-radius: 0;
+    padding: 12px;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__img {
+    text-align: center;
+  }
+}

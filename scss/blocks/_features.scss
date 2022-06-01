@@ -1,0 +1,28 @@
+.features {
+  padding: 36px 14px;
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.feature {
+  border: 1px solid var(--box-border-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-align: center;
+  padding: 36px 20px 20px;
+
+  &__img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  &__description {
+    line-height: 2.4rem;
+  }
+}
