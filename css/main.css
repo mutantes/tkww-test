@@ -212,7 +212,7 @@ body {
       outline: 0; }
   .promo__img {
     text-align: center; }
-  @media (min-width: 640px) {
+  @media (min-width: 980px) {
     .promo {
       padding: 44px 0 0;
       margin-bottom: 136px; }
