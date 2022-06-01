@@ -1,7 +1,15 @@
 .features {
   padding: 36px 14px;
   display: grid;
-  grid-row-gap: 20px;
+  grid-gap: 20px;
+  
+  @media (min-width: $md) {
+    grid: repeat(3, auto) / repeat(2, auto);
+    padding-bottom: 56px;
+  }
+  @media (min-width: $lg) {
+    grid: repeat(2, auto) / repeat(3, auto);
+  }
 }
 
 .feature {
@@ -21,7 +29,7 @@
     font-weight: 600;
     margin-bottom: 20px;
   }
-  
+
   &__description {
     line-height: 2.4rem;
   }

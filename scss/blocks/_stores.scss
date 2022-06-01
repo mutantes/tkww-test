@@ -1,8 +1,17 @@
 .stores {
   display: grid;
-  grid-row-gap: 10px;
+  grid-gap: 10px;
   width: 100%;
   &__item {
     height: 42px;
+    image-rendering: optimizeQuality;
+  }
+
+  @media (min-width: $md) {
+    grid: 55px / repeat(2, 164px);
+    grid-gap: 14px;
+    &__item {
+      height: auto;
+    }
   }
 }

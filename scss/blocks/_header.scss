@@ -2,7 +2,18 @@
   padding: 24px 0 16px;
   display: flex;
   justify-content: center;
+  
   &__logo {
     height: 28px;
   }
+  
+  @media (min-width: $lg) {
+    padding: 34px 0 26px;
+    justify-content: flex-start;
+    
+      &__logo {
+        height: 36px;
+      }
+  }
+
 }

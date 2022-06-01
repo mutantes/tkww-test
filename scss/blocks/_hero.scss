@@ -41,4 +41,19 @@
     left: 0;
     z-index: -1;
   }
+  
+  @media (min-width: $md) {
+    text-align: left;
+    padding: 124px 0 54px;
+  
+    &__title {
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+      max-width: 540px;
+    }
+
+    &::before {
+      background-size: cover;
+    }
+  }
 }

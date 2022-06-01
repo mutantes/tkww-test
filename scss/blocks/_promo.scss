@@ -27,7 +27,7 @@
     border: 1px solid var(--input-border-color);
 
     &::after {
-      content: '';
+      content: "";
       height: 42px;
       width: 42px;
       display: block;
@@ -36,9 +36,9 @@
       background-position: center center;
     }
   }
-  
+
   &__search-input {
-    width: 192px;
+    flex: 1;
     height: 42px;
     border: 0;
     border-radius: 0;
@@ -50,5 +50,51 @@
 
   &__img {
     text-align: center;
+  }
+
+  @media (min-width: $md) {
+    padding: 44px 0 0;
+    margin-bottom: 136px;
+
+    .container {
+      display: grid;
+
+      grid: 1fr / 2fr 1fr;
+
+      grid-gap: 0;
+    }
+
+    &__title {
+      font-size: 2.6rem;
+    }
+
+    &__description {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+
+    &__img {
+      margin-top: -64px;
+      text-align: right;
+
+      img {
+        height: 100%;
+      }
+    }
+    &__description {
+      margin-bottom: 24px;
+    }
+    
+    &__search {
+      margin: 0 0 28px;
+      &::after {
+        height: 46px;
+        width: 46px;
+      }
+    }
+
+    &__search-input {
+      height: 46px;
+    }
   }
 }
